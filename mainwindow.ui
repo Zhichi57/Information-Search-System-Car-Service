@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>679</width>
+    <height>374</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Программа</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>10</y>
+      <width>621</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="Layout_2">
+     <item row="1" column="0">
+      <widget class="QTableWidget" name="tableWidget">
+       <property name="rowCount">
+        <number>1</number>
+       </property>
+       <property name="columnCount">
+        <number>6</number>
+       </property>
+       <row/>
+       <column>
+        <property name="text">
+         <string>Марка</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Модель</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>VIN</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Пробег</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Год</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>ФИО</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QSplitter" name="splitter">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <widget class="QWidget" name="layoutWidget">
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="1" column="0">
+          <widget class="QPushButton" name="pushButton">
+           <property name="text">
+            <string>Добавить</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QPushButton" name="Search_Button">
+           <property name="text">
+            <string>Фильтр</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0" colspan="2">
+          <layout class="QGridLayout" name="Setka">
+           <item row="0" column="0">
+            <layout class="QGridLayout" name="Up">
+             <item row="0" column="2">
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string>VIN</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
+              <widget class="QLineEdit" name="Vin_lineEdit"/>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_2">
+               <property name="text">
+                <string>Марка</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="Model_lineEdit"/>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLineEdit" name="Marka_lineEdit"/>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Модель</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="1" column="0">
+            <layout class="QGridLayout" name="Down">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_4">
+               <property name="text">
+                <string>Пробег</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="label_5">
+               <property name="text">
+                <string>Год выпуска</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLabel" name="label_6">
+               <property name="text">
+                <string>ФИО</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLineEdit" name="Probeg_lineEdit"/>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="God_lineEdit"/>
+             </item>
+             <item row="1" column="2">
+              <widget class="QLineEdit" name="Fio_lineEdit"/>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <layout class="QGridLayout" name="SearchgridLayout">
+         <item row="1" column="0">
+          <widget class="QPushButton" name="Reset_Button">
+           <property name="text">
+            <string>Сброс</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>679</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="Open_file"/>
+    <addaction name="Save_file"/>
+    <addaction name="Exit"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="Open_file">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/pics/open.png</normaloff>:/new/pics/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Открыть файл</string>
+   </property>
+  </action>
+  <action name="Save_file">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/pics/save.png</normaloff>:/new/pics/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Сохранить файл</string>
+   </property>
+  </action>
+  <action name="Exit">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/pics/exit.png</normaloff>:/new/pics/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>
